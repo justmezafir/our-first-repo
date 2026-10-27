@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Real Estate</title>
+    <link rel="stylesheet" href="zanix.css">
+    
+</head>
+<body>
+    
+   <nav class="navbar">
+    <div class="nav-logo">Delta Real Estate</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#property">Property</a></li>
+        <li><a href="#pricing">pricing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+<div class="btn-signing" >
+    <button class="btn-signing" id="signInBtn">Sign In</button>
+    <button class="btn-login">Login</button>
+
+      <!-- Login Modal / Popup -->
+
+    <div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" onclick="openTab('login')">Login</button>
+      <button class="tab-btn" onclick="openTab('signup')">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login" class="tab-content" style="display:block">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPass" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- SignUp Form -->
+    <div id="signup" class="tab-content" style="display:none">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="signupName" placeholder="Full Name" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <input type="password" id="signupPass" placeholder="Password" required>
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+</div>
+
+   </nav>
+   
+    <section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Elevate Your Stay, <br> Elevate Your Status.</h1>
+    <p> Delta Real Estate, Phase 6 Bukhari Commercial, Karachi, Pakistan, Property Dealer</p>
+    <button class="btn-book">Book Now</button>
+  </div>
+  
+  <div class="hero-img">
+    <img src="housepic.jpg" alt="Building"> <!-- apni building ki pic ka name -->
+  </div>
+
+  <!-- Search Box -->
+  <!-- Search Box -->
+<div class="search-box">
+  <div class="search-item">
+    <label>Location</label>
+    <input type="text" id="searchInput" placeholder="Search Karachi, Lahore...">
+  </div>
+  
+  <div class="search-item">
+    <label>Type</label>
+    <select id="typeFilter">
+      <option value="">All Types</option>
+      <option value="house">House</option>
+      <option value="apartment">Apartment</option>
+    </select>
+  </div>
+
+  <div class="search-item">
+    <label>Price Range</label>
+    <select id="priceFilter">
+      <option value="">All Prices</option>
+      <option value="low">$300 - $400</option>
+      <option value="mid">$500 - $800</option>
+      <option value="high">$800+</option>
+    </select>
+  </div>
+
+  <button id="clearSearch" class="btn-search">Clear</button>
+</div>
+  </div>
+</section>
+
+<!-- Best Recommendation Section -->
+<section id="property" class="recommend">  <!-- 108 -->
+    <h2>Best Recommendation</h2>
+    
+    <div class="filter-btns">
+    <button class="active"><span>🏠</span> all</button>  <!-- YAHAN ACTIVE -->
+    <button><span>🏠</span> rooms</button>              <!-- YAHAN SE HATAO -->
+    <button><span>🏢</span> flats</button>
+    <button><span>🏡</span> house</button>
+</div>
+
+    <div class="cards-container">  <!-- 118 -->
+        
+       <!-- CARD 1 - Rooms -->
+<div class="property-card" data-type="rooms" data-price="800">
+    <img src="house1.jpg" alt="Sea View">
+    <div class="card-body">
+        <h3 class="location">Karachi PK</h3>
+        <p class="price">$800 / month</p>
+        <p class="address">Clifton, Karachi</p>
+    </div>
+</div>
+
+<!-- CARD 2 - Flats -->
+<div class="property-card" data-type="flats" data-price="800">
+    <img src="house5.jpg" alt="Penthouse">
+    <div class="card-body">
+       <h3 class="location">Gulshan, Karachi</h3>
+        <p class="price">$1500 / month</p>
+        <p class="address">Gulshan, Karachi</p>
+    </div>
+</div>
+
+<!-- CARD 3 - House -->
+<div class="property-card" data-type="house" data-price="700">
+    <img src="house6.jpg" alt="Family Home">
+    <div class="card-body">
+        <h3 class="location">Family Home, Lahore</h3>
+        <p class="price">$700 / month</p>
+        <p>North Nazimabad</p>
+    </div>
+</div>
+
+<!-- CARD 4 - House -->
+<div class="property-card" data-type="house" data-price="2000">
+    <img src="house2.jpg" alt="DHA Villa">
+    <div class="card-body">
+        <h3 class="location">DHA Villa, Karachi</h3>
+        <p class="price">$2000 / month</p>
+        <p class="address">DHA Phase 8</p>
+    </div>
+</div>
+
+<!-- CARD 5 - Flats -->
+<div class="property-card" data-type="flats" data-price="1200">
+    <img src="house3.jpg" alt="Luxury Apartment">
+    <div class="card-body">
+        <h3 class="location">Luxury Apartment, Lahore</h3>
+        <p class="price">$1200 / month</p>
+        <p class="address">PECHS</p>
+    </div>
+</div>
+
+<!-- CARD 6 - Rooms -->
+<div class="property-card" data-type="rooms" data-price="450">
+    <img src="house4.jpg" alt="Studio Room">
+    <div class="card-body">
+        <h3 class="location">Studio Room,Karachi</h3>
+        <p class="price">$450 / month</p>
+        <p class="address">Saddar</p>
+    </div>
+</div>
+</section>  <!-- 174 -->
+
+
+  
+<div id="propertyModal" class="modal">
+  <div class="modal-content" style="width: 600px; max-width: 90%;">
+    <span class="close" onclick="closePropertyModal()">&times;</span>
+    <img id="propImg" src="" style="width:100%; height:300px; object-fit:cover;">
+    
+    <div class="modal-body">
+      <h2 id="propTitle"></h2>
+      <p id="propPrice"></p>
+      <p id="propDesc">3 Bedrooms, 2 Bathrooms, 1800 sqft. Beautiful modern house with garden and garage.</p>
+      <button class="btn-contact" id="contactBtn">Contact Agent</button>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+   <script src="zanix.js"></script>
+
+   <section id="contact" style="padding: 60px 20px; text-align: center; background: #f5f5f5;">
+    <h2>Contact Us</h2>
+    <p>Delta Real Estate, Phase 6 Bukhari Commercial, Karachi</p>
+    <p>Phone: +92 321 2649889 | Email: info@deltarealestate.pk</p>
+</section>
+
+  <script>
+const filterBtns = document.querySelectorAll('.filter-btns button');
+const cards = document.querySelectorAll('.property-card');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.textContent.toLowerCase().replace(/[^a-z]/g, '').trim();
+        
+        cards.forEach(card => {
+            const cardType = card.getAttribute('data-type').toLowerCase().trim();
+            
+            if(filter === 'all' || cardType === filter){
+                card.style.display = ''; // GRID/BLOCK ki jagah KHALI
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+    
+<script src="zanix.js"></script>
+</body>
+</html>

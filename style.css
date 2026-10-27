@@ -1,0 +1,107 @@
+.navbar{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(197, 240, 240);
+    border-radius: 20px;
+}
+
+.nav{
+   list-style: none;
+   display: flex;
+   gap: 50px;
+   margin-left: 530px;
+    margin-top: -57px;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+}
+.logo{
+    margin-left: 20px;
+}
+
+.elevate {
+    font-size: larger;
+    margin-top: 80px;
+    margin-left: 20px;
+
+}
+
+.heading{
+    font-weight: 100;
+    font-size: 60px;
+}
+
+body{
+   background-color: rgb(212, 211, 211);
+}
+
+.image{
+    margin-left: 800px;
+    margin-top: -170px;
+    height: 300px;
+    width: 500px;
+}
+
+.para1 {
+    font-size: 25px;
+}
+
+.cards-container{
+    border: 1px solid black;
+    height: 1200px;
+    width: 100%;
+    padding: 40px;
+}
+
+.property-card {
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    border-radius: 35px;
+    overflow: hidden;
+
+}
+
+.property-card img {
+    object-fit: cover;
+    width: 100%;
+    
+    
+}
+
+.card-body { padding: 20px; }
+.card-body h3 { font-size: 20px; margin-bottom: 5px; }
+.card-body p { color: #777; font-size: 14px; margin-bottom: 15px; }
+
+
+.cards-container{
+    border: 1px solid black;
+    height: 1200px;
+    width: 100%;
+    padding: 40px;
+    float: left;
+}
+
+.property-card {
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    border-radius: 35px;
+    overflow: hidden;
+
+}
+
+.property-card img {
+    object-fit: cover;
+    width: 100%;
+    
+    
+}
+
+.card-body { padding: 20px; }
+.card-body h3 { font-size: 20px; margin-bottom: 5px; }
+.card-body p { color: #777; font-size: 14px; margin-bottom: 15px; }
+
